@@ -13,7 +13,7 @@ font-family: 'Inter', sans-serif;
 
 :root {
     /* colores */
-    --green-nav: #03a81e ;
+    --green-nav: #03a81e;
     --white-nav: #f0f8f8;
     --off-white: #faf8f7;
 
@@ -30,7 +30,7 @@ font-family: 'Inter', sans-serif;
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;   
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -42,7 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     width: 100%;
     /* dimencion mas chica en dispositivos */
     min-width: 320px;
@@ -57,7 +57,7 @@ header img {
     height: 250px;
     border: 5px solid var(--green-nav);
     border-radius: 100%;
-    align-self: center ;
+    align-self: center;
     margin-top: 25px;
 }
 
@@ -66,35 +66,34 @@ header img {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top:40px;
+    margin-top: 20px;
     text-align: center;
-    align-self: center ;
+    align-self: center;
 }
 
 .header--title-container h1 {
-    color:var(--white-nav);
+    color: var(--white-nav);
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    
+
 }
 
 .header--title-container p {
-    margin-top: 25px;
+    margin-top: 3px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    
-    color: rgb(192, 243, 192)
 
+    color: rgb(192, 243, 192)
 }
 
 .header--title-container .header--button {
     position: absolute;
-    left: calc( 50% - 110px);
-    top:270px;
+    left: calc(50% - 110px);
+    top: 270px;
     display: block;
-    margin-top: 35px;
+    margin-top: 10px;
     padding-top: 10px;
     width: 229px;
     height: 48px;
@@ -107,25 +106,71 @@ header img {
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
-    color:black;
+    color: black;
     text-align: center;
-    
+
 
 
 
 }
 
 .header--button span {
-    
+
     position: absolute;
     padding-top: 10px;
 
-    
+
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url(".././assets-adoptame/icons/360_F_376692508_XUzZzz0x3W34II8NlIOfqZQ2Lc26kh58.jpg");
     
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+}
+
+.slideshow img {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Definir la animación */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    90% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+
 
 }
 
+/* Iniciar la animación */
+.slideshow img {
+    animation: slide 20s infinite;
+}
