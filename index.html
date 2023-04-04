@@ -24,7 +24,7 @@
             <h1>Adopta a tu mejor Amigo</h1>
             <p>Gracias a ellos tendras un amigo incondicional, que invertiran todo su tiempo e tu felicidad</p>
             <a href="" class="header--button">Que puedes hacer?<span class="material-symbols-outlined">
-                expand_more
+                    expand_more
                 </span></a>
         </div>
 
@@ -46,7 +46,7 @@
 
     </header>
     <main>
-        <section>
+        <section class="main--galeria-adopcion">
             <div class="slideshow">
                 <img src="./assets-adoptame/img/imagen1.jpg">
                 <img src="./assets-adoptame/img/imagen2.jpg">
@@ -54,34 +54,41 @@
                 <img src="./assets-adoptame/img/imagen4.jpg">
                 <img src="./assets-adoptame/img/imagen5.jpg">
                 <img src="./assets-adoptame/img/no_compres.jpg">
-              </div>
-              
+            </div>
+
         </section>
         <!-- formulario perdida -->
-        <section class="form">
+        <section class="main--form">
             <div class="form--lost-dog">
                 <h2>Formulario de mascota perdida</h2>
                 <br>
                 <form>
-                  <label for="name">Nombre:</label>
-                  <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
 
-                  <label for="name-mascota">Nombre de la MASCOTA:</label>
-                  <input type="text" id="name-mascota" name="name-mascota" required>
-            
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                    <label for="name-mascota">Nombre de la MASCOTA:</label>
+                    <input type="text" id="name-mascota" name="name-mascota" required>
 
-                  <label for="phone">Teléfono:</label>
-                  <input type="tel" id="phone" name="phone" required>
-            
-                  <label for="subject">Zona:</label>
-                  <input type="text" id="subject" name="subject" required>
-            
-                  <label for="description">Descripción:</label>
-                  <textarea  id="message" name="message" required placeholder="Ingrese una descripcion de la mascota y las circuntancias de la pedida que puedan ayudar a encontarla"></textarea>
-            
-                  <input type="submit" value="Enviar" >
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="lost-date">Fecha de Extravio:</label>
+                    <input type="date" id="lost-date" name="lost-date   " required>
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="subject">Zona:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="description">Descripción:</label>
+                    <textarea id="message" name="message" required placeholder="Ingrese una descripcion de la mascota y las circuntancias de la pedida que puedan ayudar a encontarla"></textarea>
+
+                    <label for="">Subir imagen:</label>
+                    <input type="file" id="img-upload" name="img-upload">
+                    <label for="img-upload" class="custom-file-upload">Seleccionar archivo</label>
+
+                    <input type="submit" value="Enviar">
                 </form>
 
             </div>

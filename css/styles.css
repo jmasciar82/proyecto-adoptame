@@ -176,28 +176,37 @@ header img {
 }
 
 /* formario mascota pedida */
-main .form {
+
+form  {
+    display: flex;
+    flex-direction: column;
+    
+  }
+main .main--form {
     width: 80%;
     margin: 20px auto;
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #007bff91;
+    min-width: 300px;
+    max-width: 400px;
   }
   
-  form  {
-    display: flex;
-    flex-direction: column;
-  }
+  
   
   .form--lost-dog {
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-weight: bold;   
+    margin: 0 auto;
     
   }
   
   .form--lost-dog input[type="text"],
   input[type="email"],
-  input[type="tel"]
+  input[type="tel"],
+  input[type="file"],
+  input[type="date"]
    {
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -217,6 +226,48 @@ main .form {
     font-size: 1rem;
 
   }
+
+  .form--lost-dog input[type="file"] {
+    display: none;
+
+  }
+
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    
+
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .custom-file-upload:active {
+    background-color: #e8e8e8;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+ 
+
+
   
   input[type="submit"] {
     background-color: #007bff;
@@ -230,6 +281,9 @@ main .form {
   
   input[type="submit"]:hover {
     background-color: #0056b3;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
+    cursor: pointer;
   }
   
   
