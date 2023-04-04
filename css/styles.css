@@ -174,3 +174,62 @@ header img {
 .slideshow img {
     animation: slide 20s infinite;
 }
+
+/* formario mascota pedida */
+main .form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form--lost-dog {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+  }
+  
+  .form--lost-dog input[type="text"],
+  input[type="email"]
+   {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    
+
+  }
+
+  .form--lost-dog textarea {
+    height: 60px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
