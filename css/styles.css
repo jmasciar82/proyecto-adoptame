@@ -1,3 +1,27 @@
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+/* 
+1. Posicionamiento
+2. modelo de vaja
+3. tipografia
+4. visuales
+5. otros
+*/
+
+:root {
+    /* colores */
+    --green-nav: #03a81e;
+    --white-nav: #f0f8f8;
+    --off-white: #faf8f7;
+
+}
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +30,266 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    /* dimencion mas chica en dispositivos */
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+
+    background: linear-gradient(207.8deg, rgb(8, 35, 156) 16%, green 100%);
+}
+
+header img {
+    width: 150px;
+    height: 250px;
+    border: 5px solid var(--green-nav);
+    border-radius: 100%;
+    align-self: center;
+    margin-top: 25px;
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    color: var(--white-nav);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+
+}
+
+.header--title-container p {
+    margin-top: 3px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    color: rgb(192, 243, 192)
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 110px);
+    top: 270px;
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*  sombra */
+
+    box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+
+
+
+}
+
+.header--button span {
+
+    position: absolute;
+    padding-top: 10px;
+
+
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+}
+
+.slideshow img {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Definir la animación */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    90% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+
+
+}
+
+/* Iniciar la animación */
+.slideshow img {
+    animation: slide 20s infinite;
+}
+
+/* formario mascota pedida */
+
+form  {
+    display: flex;
+    flex-direction: column;
+    
+  }
+main .main--form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff91;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
+  
+  
+  .form--lost-dog {
+    margin-bottom: 0.5rem;
+    font-weight: bold;   
+    margin: 0 auto;
+    
+  }
+  
+  .form--lost-dog input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"],
+  input[type="date"]
+   {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    
+
+  }
+    /* input descripcion de la mascota */
+  .form--lost-dog textarea {
+    height: 60px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+
+  }
+  /* quita de formato del boton para subir imagen */
+  .form--lost-dog input[type="file"] {
+    display: none;
+
+  }
+  /* estilo del boton para subir imagen */
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    
+
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .custom-file-upload:active {
+    background-color: #e8e8e8;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="file"]:not(:empty) + label::after {
+    content: attr(data-file);
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  
+
+  
+  
+  
+  
+  
+  
+ 
+
+
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
+    cursor: pointer;
+  }
+  
+  
+  
