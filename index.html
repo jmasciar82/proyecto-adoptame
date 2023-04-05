@@ -22,7 +22,7 @@
         <img src="./assets-adoptame/png/logo-adoptame.jpg" alt="">
         <div class="header--title-container">
             <h1>Adopta a tu mejor Amigo</h1>
-            <p>Gracias a ellos tendras un amigo incondicional, que invertiran todo su tiempo e tu felicidad</p>
+            <p>Gracias a ellos tendras un amigo incondicional, que invertiran todo su tiempo en tu felicidad</p>
             <a href="" class="header--button">Que puedes hacer?<span class="material-symbols-outlined">
                     expand_more
                 </span></a>
@@ -45,9 +45,10 @@
             </ul> -->
 
     </header>
-    <br>
+
     <main>
         <section class="main--galeria-adopcion">
+            <br>
             <div class="slideshow">
                 <img src="./assets-adoptame/img/imagen1.jpg">
                 <img src="./assets-adoptame/img/imagen2.jpg">
@@ -56,71 +57,125 @@
                 <img src="./assets-adoptame/img/imagen5.jpg">
                 <img src="./assets-adoptame/img/no_compres.jpg">
             </div>
+            <br>
 
         </section>
-        <br>
-        <!-- formulario perdida -->
+
         <section class="main--form">
-            <div class="form--lost-dog">
+            <h2>Para poder adoptar debes REGISTRARTE!</h2>
+
+            <div class="form--adoptame">
+
+                <br>
+                <form action="">
+                    <label for="username"><em>Nombre completo</em></label>
+                    <input type="text" name="username" id="username">
+
+                    <label for="email"><em>Email</em></label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="password"><em>Contraseña</em></label>
+                    <input type="password" name="password" id="password">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <script src="./js/form-validation"></script>
+            </div>
+        </section>
+
+
+        <section class="main--committed">
+            <h2>¿Estás listo para adoptar?</h2>
+            <p>Adoptar una mascota es una gran responsabilidad, y es importante hacerlo de manera responsable para
+                asegurarse de que la mascota tenga el cuidado y el amor que necesita. Aquí hay algunos consejos para
+                adoptar una mascota responsablemente:</p>
+
+            <ul>
+                <div>
+                    <li>1</li>
+                    <p> Investiga: Asegúrate de investigar el tipo de mascota que quieres adoptar, sus necesidades y
+                        comportamientos, así como los costos que conlleva su cuidado, como la alimentación, el refugio y
+                        los gastos médicos.</p>
+
+                </div>
+
+                <div>
+                    <li>2</li>
+                    <p> Evalúa tu estilo de vida: Asegúrate de que tu estilo de vida sea compatible con la mascota que
+                        deseas adoptar. Por ejemplo, si trabajas muchas horas al día, es posible que desees adoptar un
+                        animal que no necesite mucha atención o que puedas contratar a alguien para que lo cuide durante
+                        el día.</p>
+                </div>
+                <div>
+                    <li>3</li>
+                    <p>Adopta de un refugio: Considera adoptar una mascota de un refugio en lugar de comprarla en una
+                        tienda de mascotas. Adoptar de un refugio no solo puede ser más económico, sino que también
+                        puedes salvar la vida de una mascota que necesita un hogar.</p>
+                </div>
+                <div>
+                    <li>4</li>
+                    <p>Prepárate para la adopción: Antes de llevar a tu nueva mascota a casa, asegúrate de tener todo lo
+                        necesario para su cuidado, como comida, cama, juguetes y suministros de limpieza. También es
+                        importante programar una visita con el veterinario para un chequeo completo.</p>
+                </div>
+                <div>
+                    <li>5</li>
+                    <p>Brinda amor y cuidado: Una vez que lleves a tu mascota a casa, asegúrate de brindarle el amor y
+                        cuidado que necesita. Pasea a tu perro regularmente, juega con tu gato, dale una dieta saludable
+                        y proporciónale atención médica regular.</p>
+                </div>
+
+                </ol>
+                <br>
+                <p>Adoptar puede ser una experiencia muy gratificante, pero es importante hacerlo de manera responsable
+                    para asegurarse de que la mascota tenga una vida feliz y saludable.</p>
+
+
+
+        </section>
+
+
+
+        <hr>
+
+        <!-- formulario perdida -->
+
+
+
+        <section class="main--form">
+            <div class="form--adoptame">
                 <h2>Formulario de mascota perdida</h2>
                 <br>
-                
-                <form>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
 
+                <form>
                     <label for="name-mascota">Nombre de la MASCOTA:</label>
                     <input type="text" id="name-mascota" name="name-mascota" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
                     <label for="lost-date">Fecha de Extravio:</label>
-                    <input type="date" id="lost-date" name="lost-date   " required>
+                    <input type="date" id="lost-date" name="lost-date" required>
 
-                    <label for="phone">Teléfono:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="zona">Zona:</label>
+                    <input type="text" id="zona" name="zona" required>
 
-                    <label for="subject">Zona:</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" id="tel" name="tel" required> 
 
                     <label for="description">Descripción:</label>
-                    <textarea id="message" name="message" required placeholder="Ingrese una descripcion de la mascota y las circuntancias de la pedida que puedan ayudar a encontarla"></textarea>
+                    <textarea id="description" name="description" required
+                        placeholder="Ingrese una descripcion de la mascota y las circuntancias de la pedida que puedan ayudar a encontarla"></textarea>
+                    
 
-                    <label for="">Subir imagen:</label>
+                    <label for="img-upload">Subir imagen:</label>
                     <input type="file" id="img-upload" name="img-upload">
-                    <label for="img-upload" class="custom-file-upload">Seleccionar archivo</label>
+                    
 
                     <input type="submit" value="Enviar">
                 </form>
 
             </div>
         </section>
-        <section class="main--committed">
-            <h2>Ser responsable</h2>
-            <p>Adoptar una mascota es una gran responsabilidad, y es importante hacerlo de manera responsable para asegurarse de que la mascota tenga el cuidado y el amor que necesita. Aquí hay algunos consejos para adoptar una mascota responsablemente:</p>
 
-            <ol>
-                <li>Investiga:</li>
-                <p> Asegúrate de investigar el tipo de mascota que quieres adoptar, sus necesidades y comportamientos, así como los costos que conlleva su cuidado, como la alimentación, el refugio y los gastos médicos.</p>
-                <li>Evalúa tu estilo de vida:</li>
-                <p> Asegúrate de que tu estilo de vida sea compatible con la mascota que deseas adoptar. Por ejemplo, si trabajas muchas horas al día, es posible que desees adoptar un animal que no necesite mucha atención o que puedas contratar a alguien para que lo cuide durante el día.</p>
-                <li>Adopta de un refugio: </li>
-                <p>Considera adoptar una mascota de un refugio en lugar de comprarla en una tienda de mascotas. Adoptar de un refugio no solo puede ser más económico, sino que también puedes salvar la vida de una mascota que necesita un hogar.</p>
-                <li>Prepárate para la adopción: </li>
-                <p>Antes de llevar a tu nueva mascota a casa, asegúrate de tener todo lo necesario para su cuidado, como comida, cama, juguetes y suministros de limpieza. También es importante programar una visita con el veterinario para un chequeo completo.</p>
-                <li>Brinda amor y cuidado:</li>
-                <p> Una vez que lleves a tu mascota a casa, asegúrate de brindarle el amor y cuidado que necesita. Pasea a tu perro regularmente, juega con tu gato, dale una dieta saludable y proporciónale atención médica regular.</p>
-            </ol>
 
-            <p>Adoptar una mascota puede ser una experiencia muy gratificante, pero es importante hacerlo de manera responsable para asegurarse de que la mascota tenga una vida feliz y saludable.</p>
-
-        </section>
-        <section class="main--adoptar">
-            
-
-        </section>
-        <section></section>
     </main>
     <footer></footer>
 
