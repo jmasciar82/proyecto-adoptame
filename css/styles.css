@@ -91,22 +91,22 @@ header img {
 .header--title-container .header--button {
     position: absolute;
     left: calc(50% - 110px);
-    top: 270px;
+    top: 280px;
     display: block;
-    margin-top: 10px;
-    padding-top: 10px;
-    width: 229px;
-    height: 48px;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
     background-color: var(--off-white);
     /*  sombra */
 
     box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: rgb(31, 29, 189);
     text-align: center;
 
 
@@ -180,6 +180,7 @@ header img {
 form  {
     display: flex;
     flex-direction: column;
+
     
   }
 main .main--form {
@@ -261,19 +262,7 @@ main .main--form {
     margin-top: 8px;
     font-size: 14px;
   }
-
-  
-
-  
-  
-  
-  
-  
-  
- 
-
-
-  
+    
   input[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -289,6 +278,34 @@ main .main--form {
     font-weight: bold;
     box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
     cursor: pointer;
+  }
+
+  .main--committed {
+    
+    text-align: justify;
+    background: linear-gradient(207.8deg, rgb(8, 35, 156) 16%, green 100%);
+    padding: 20px;
+    color: #ccc;
+    
+
+  }
+  .main--committed h2 {
+    
+    text-align: left;
+    margin-bottom: 15px;
+
+  }
+
+  .main--committed ol {
+    text-align: justify;
+    margin: 25px;
+    margin-top: 10px;
+    
+  }
+  .main--committed ol li{
+    
+    margin-top: 10px;
+    
   }
   
   
