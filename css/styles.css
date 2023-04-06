@@ -164,6 +164,9 @@ header img {
     overscroll-behavior: contain;
     scroll-snap-type: proximity;
     
+    min-width: 300px;
+    max-width: 480px;
+    
 }
 /* modifico la barra de desplazamiento vertical */
 .main--container-puntos::-webkit-scrollbar {
