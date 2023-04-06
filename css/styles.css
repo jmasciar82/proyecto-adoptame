@@ -5,7 +5,7 @@ font-family: 'Inter', sans-serif;
 
 /* 
 1. Posicionamiento
-2. modelo de vaja
+2. modelo de caja
 3. tipografia
 4. visuales
 5. otros
@@ -52,6 +52,7 @@ header {
     background: linear-gradient(207.8deg, rgb(8, 35, 156) 16%, green 100%);
 }
 
+
 header img {
     width: 150px;
     height: 250px;
@@ -88,47 +89,11 @@ header img {
     color: rgb(192, 243, 192)
 }
 
-.header--title-container .header--button {
-    position: absolute;
-    left: calc(50% - 110px);
-    top: 280px;
-    display: block;
-    margin: 5px;
-    padding: 10px;
-    width: 200px;
-    height: 40px;
-    background-color: var(--off-white);
-    /*  sombra */
 
-    box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(31, 29, 189);
-    text-align: center;
-
-
-
-
-}
-
-.header--button span {
-
-    position: absolute;
-    padding-top: 10px;
-
-
-    width: 13px;
-    height: 8px;
-    margin-left: 10px;
-
-}
 
 /* seccion de la galeria de fotos */
 .main--galeria-adopcion {
-    background-color: #007bff;
+    background-color: #007bff42;
 }
 
 .slideshow {
@@ -246,7 +211,13 @@ form {
     flex-direction: column;
 }
 
-
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #b06ab3;
+    padding-top: 20px;
+}
 
 main .main--form {
     width: 80%;
@@ -330,3 +301,6 @@ input[type="submit"]:hover button:hover {
     box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
     cursor: pointer;
 }
+
+
+  
