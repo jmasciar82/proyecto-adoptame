@@ -164,23 +164,23 @@ header img {
     overscroll-behavior: contain;
     scroll-snap-type: proximity;
     
-    min-width: 300px;
+    min-width: 280px;
     max-width: 480px;
     
 }
 /* modifico la barra de desplazamiento vertical */
 .main--container-puntos::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 12px;               /* ancho de la barra del scroll */
   }
   
   .main--container-puntos::-webkit-scrollbar-track {
-    background: none;        /* color of the tracking area */
+    background: none;        /* color de la guia del scroll */
   }
   
   .main--container-puntos::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 255, 0.459);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: none;  /* creates padding around scroll thumb */
+    background-color: rgba(0, 0, 255, 0.459);    /* color de la barra del scroll */
+    border-radius: 20px;       /* borde de la barra del scroll*/
+    
   }
 
 .main--committed h2 {
