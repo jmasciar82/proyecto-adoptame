@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopta a tu mejor amigo</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pc.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(max-width: 700)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,18 +19,44 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header id="home">
+
+        <div class="navbar">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#adoption-galery">Quiero adoptar!</a></li>
+                    <li><a href="#lost-pet">Mascota Perdida!</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="toggle-sidebar" />
+
+            <label for="toggle-sidebar" id="toggle-sidebar-label">
+                Menu
+            </label>
+        </div>
+
+        
+
+        <div class="logo"><img src="./assets-adoptame/png/logo-adoptame.jpg" alt=""></div>
 
 
 
-        <img src="./assets-adoptame/png/logo-adoptame.jpg" alt="">
+
+
+
         <div class="header--title-container">
             <h1>Adopta a tu mejor Amigo</h1>
             <p>Gracias a ellos tendras un amigo incondicional, que invertiran todo su tiempo en tu felicidad</p>
         </div>
     </header>
     <main>
-        <section class="main--galeria-adopcion">
+        <section class="main--galeria-adopcion" id="adoption-galery">
             <br>
             <div class="slideshow">
                 <img src="./assets-adoptame/img/imagen1.jpg">
@@ -136,7 +164,7 @@
 
 
 
-        <section class="main--form">
+        <section class="main--form" id="lost-pet">
             <div class="form--adoptame">
                 <h2>Formulario de mascota perdida</h2>
                 <br>
@@ -169,7 +197,7 @@
     </main>
 
     <!-- footer  -->
-    <footer>
+    <footer id="footer">
 
         <section class="footer--izq">
             <ul>
