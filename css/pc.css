@@ -1,0 +1,88 @@
+header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: inline-flexbox;
+    background-color: #3333336b;
+    /* color de fondo de la barra de navegación */
+    position: sticky;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* convierte la lista en un contenedor flexible */
+}
+
+header nav li {
+    margin: 0px;
+    padding: 0;
+}
+
+header nav a {
+    display: block;
+    padding: 10px 20px;
+    /* espacio alrededor del texto del enlace */
+    text-decoration: none;
+    color: #fff;
+    /* color del texto del enlace */
+}
+
+header nav a:hover {
+    background-color: #555;
+    /* color de fondo del enlace al pasar el cursor por encima */
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+}
+
+header .logo img {
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+
+}
+
+.check input[type="checkbox"],
+.check label {
+    display: none;
+
+}
+.main--committed p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.main--container-puntos {
+    display: flexbox;
+    border: 2px solid #03a81f73;
+    border-radius: 10px;
+    margin: 10px auto 20px;
+    padding: 20px;
+    height: 360px;
+    width: 100%;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    scroll-snap-type: proximity;
+    background-color: blanchedalmond;
+
+    min-width: 280px;
+    max-width: 650px;
+
+}
+
+.main--galeria-adopcion{
+    margin: 0 auto;
+    width: 600px;
+    
+}
